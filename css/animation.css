@@ -1,0 +1,29 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: violet;
+  transition: margin 0.5s 0.5s, border-radius 3s;
+
+  &:hover {
+    background-color: red;
+    border-radius: 100%;
+    animation: ease-out;
+    margin-left: 50px;
+  }
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: cadetblue;
+  animation: fadeOut 1s 2 both;
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: rotate(0dedg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}

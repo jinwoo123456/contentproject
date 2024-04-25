@@ -1,0 +1,60 @@
+:root {
+  --line: #393d46;
+  --line2: #e1e1e1;
+  --line3: #9499a4;
+  --black: #000;
+  --bgbtn: #60696f;
+  --white: #fff;
+}
+
+.table_type10 {
+  border-top: 2px solid var(--line);
+  tbody {
+    tr {
+      border-bottom: 1px solid var(--line5);
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  td {
+    color: var(--line2);
+    padding: 19px 20px 19px 12px;
+    font-size: 16px;
+    + td {
+      color: #6a6a6a;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 406.25%;
+      border-right: 1px solid var(--line3);
+    }
+  }
+  [rowspan] {
+    border-right: 1px solid var(--black);
+  }
+
+  .btn-gray {
+    display: inline-flex;
+    width: 105px;
+    height: 28px;
+    border-radius: 14px;
+    background: var(--bgbtn);
+    color: var(--white);
+    font-size: 16px;
+  }
+  thead {
+    border-top: 1px solid var(--line);
+    th {
+      padding: 17px 0;
+      color: #000;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  .align-items {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Class name CASE */
+}

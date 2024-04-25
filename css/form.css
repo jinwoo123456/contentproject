@@ -36,9 +36,96 @@ body {
     padding: 7 20px;
     color: var(--text);
   }
+  table {
+    border: 1px solid var(--line);
+  }
 }
 
 .check-list {
   display: flex;
   gap: 30px;
+}
+.search__word {
+  display: grid;
+  grid-template-columns: 1fr 85px;
+  input {
+    height: 40px;
+    border: 1px solid yellow;
+  }
+  button {
+    color: var(--white);
+    font-size: 16px;
+    background-color: var(--btnbg);
+    transition: 0.5s;
+
+    &:hover {
+      color: var(--btnbg);
+      background-color: var(--white);
+      border: 1px solid var(--btnbg);
+      font-size: 40px;
+      margin-top: 30px;
+    }
+  }
+}
+form {
+  button,
+  select,
+  textarea,
+  input {
+    border: 1px solid #cecece;
+  }
+}
+
+.check-type-1 {
+  display: none;
+  + label {
+    padding-left: 18px;
+    background: url(../images/bg_check_off.svg) no-repeat left;
+  }
+  &:checked {
+    + label {
+      background: url(../images/bg_check_on.svg) no-repeat left;
+    }
+  }
+}
+
+.form-6 {
+  + label {
+    padding-left: 10px;
+    white-space: nowrap;
+  }
+  --thcolor: var(#f7f7f7);
+  table {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  th {
+    background-color: #f7f7f7;
+    padding: 13px 36px;
+    color: #555;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 13px;
+    font-weight: 400;
+  }
+  tr {
+    border-top: 1px so lid #e5e5e5;
+  }
+
+  td {
+    color: #555;
+    font-family: "Noto Sans KR";
+    font-size: 13px;
+    font-weight: 400;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    padding: 13px 13px;
+
+    input {
+      padding-right: 10px;
+    }
+  }
 }

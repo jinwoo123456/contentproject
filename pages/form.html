@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../css/form.css" />
   </head>
   <body>
-    <form action="">
+    <form class="form">
       <fieldset>
         <legend>온라인서식의 제목</legend>
-        <ul class=>
+        <ul>
           <li><input type="text" /> 한줄 글상자</li>
           <li><input type="password" /> 비밀번호 입력</li>
           <li><input type="file" /> 첨부파일</li>
@@ -80,12 +80,38 @@
               <th>직군구분</th>
               <td>
                 <ul class="check-list">
-                  <li><input type="checkbox" />전체</li>
-                  <li><input type="checkbox" />Engineering</li>
-                  <li><input type="checkbox" />Design</li>
-                  <li><input type="checkbox" />Business</li>
-                  <li><input type="checkbox" />Staff</li>
-                  <li><input type="checkbox" />기타</li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      class="check-type-1"
+                      id="check_1"
+                    /><label for="check_1">전체</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check_2" /><label for="check_2"
+                      >Engineering</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check_3" /><label for="check_3"
+                      >Design</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check_4" /><label for="check_4"
+                      >Business</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check_5" /><label for="check_5"
+                      >Staff</label
+                    >
+                  </li>
+                  <li>
+                    <input type="checkbox" id="check_6" /><label for="check_6"
+                      >기타</label
+                    >
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -94,8 +120,216 @@
       </fieldset>
     </form>
     <form action="">
-      <input type="search" />
-      <button type="submit">찾기</button>
+      <div class="search__word">
+        <input type="search" class="serach_typing" />
+        <button type="submit">찾기</button>
+      </div>
+    </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <form class="form-6">
+      <fieldset>
+        <table>
+          <colgroup>
+            <col style="width: 120px" />
+            <col />
+          </colgroup>
+          <tr>
+            <th>주거형태</th>
+            <td>
+              <ul>
+                <li>
+                  <input type="checkbox" id="check_1_1" /><labe
+                    l
+                    for="check-1_1"
+                    >아파트</labe
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_2" /><label for="check-1_2"
+                    >연립/빌라</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_3" /><label for="check-1_3"
+                    >단독주택</label
+                  >
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <th>분야</th>
+            <td>
+              <ul>
+                <li>
+                  <input type="checkbox" id="check-1_4" id="check-1" /><labe
+                    for="check-1_4"
+                    >리모델링</labe
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_5" /><label for="check-1_5"
+                    >키친&바스</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_6" /><label for="check-1_6"
+                    >빌트인수납</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_7" /><label for="check-1_7"
+                    >가구</label
+                  >
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <th>비용</th>
+            <td>
+              <ul>
+                <li>
+                  <input type="checkbox" id="check-1_8" /><labe for="check-1_8"
+                    >500만원 미만</labe
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_9" /><label for="check-1_9"
+                    >500~1000만원</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_10" /><label
+                    for="check-1_10"
+                    >1000~2000만원</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_11" /><label
+                    for="check-1_11"
+                    >2000~3000만언
+                  </label>
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_12" /><label
+                    for="check-1_12"
+                    >3000~4000만원</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_13" /><label
+                    for="check-1_13"
+                    >4000~5000만언</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_14" /><label
+                    for="check-1_14"
+                    >5000만원 이상</label
+                  >
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <th>스타일</th>
+            <td>
+              <ul>
+                <li>
+                  <input type="checkbox" id="check-1_15" /><labe
+                    for="check-1_15"
+                    >모던</labe
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_16" /><label
+                    for="check-1_16"
+                    >클래식</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_17" /><label
+                    for="check-1_17"
+                    >내추럴</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_18" /><label
+                    for="check-1_18"
+                    >화이트</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_19" /><label
+                    for="check-1_19"
+                    >모노톤</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_20" /><label
+                    for="check-1_20"
+                    >파스텔</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_21" /><label
+                    for="check-1_21"
+                    >로맨틱</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_22" /><label
+                    for="check-1_22"
+                    >유니크</label
+                  >
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <th>평형대</th>
+            <td>
+              <ul>
+                <li>
+                  <input type="checkbox" id="check-1_23" /><labe
+                    l
+                    for="check-1_23"
+                    >20평형</labe
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_24" /><label
+                    for="check-1_24"
+                    >30평형</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_25" /><label
+                    for="check-1_25"
+                    >40평형</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="check-1_26" /><label
+                    for="check-1_26"
+                    >50평형 이상</label
+                  >
+                </li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
     </form>
   </body>
 </html>
